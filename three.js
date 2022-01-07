@@ -45,10 +45,10 @@ init();
 function animate() {
   requestAnimationFrame(animate);
 
-  mesh.rotation.x = 0.002;
-  mesh.rotation.y = 0.002;
+  mesh.rotation.x += 0.01;
+  mesh.rotation.y += 0.01;
 
-  render.render(scene, camera)
+  render.render(scene, camera);
 }
 
 animate();
