@@ -23,9 +23,9 @@ function init() {
   // geometry of scene
   geometry = new THREE.IcosahedronGeometry(100, 3);
   // material
-  material = new THREE.MeshBasicMaterial({
+  material = new THREE.MeshNormalMaterial({
     color: "red",
-    wireframe: true,
+    wireframe: false,
     wireframeLineWidth: 4,
   });
   // create mesh
